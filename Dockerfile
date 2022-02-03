@@ -15,4 +15,4 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt /var/www/yaqluator.com/requirements.txt
 RUN pip install --no-cache-dir -r /var/www/yaqluator.com/requirements.txt
 # Install Gunicorn WSGI HTTP server requirement for web service.
-RUN pip install --no-cache-dir gunicorn
+RUN pip install --no-cache-dir gunicorn==20.1.0
